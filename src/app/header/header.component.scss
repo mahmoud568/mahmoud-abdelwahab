@@ -1,0 +1,136 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #181818;
+  gap: 150px;
+  width: 130px;
+  height: 100vh;
+  color: white;
+  @media screen and (max-width: 1300px) {
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.1s linear;
+    }
+    &.hidden {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 0.1s, opacity 0.1s linear;
+    }
+  }
+
+  .name-header {
+    padding: 20px 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 1300px) {
+      padding-top: 50px;
+    }
+    .img {
+      width: 55px;
+      display: block;
+      cursor: pointer;
+    }
+    .name {
+      font-family: 'IBM Plex Sans', sans-serif;
+      color: #fff;
+      margin-top: 1px;
+      font-size: 1rem;
+      padding-top: 0.5rem;
+      cursor: pointer;
+
+    }
+    .title {
+      font-family: 'Open Sans';
+      color: #a5a5a5;
+      font-size: .8rem;
+      margin-top: .6rem;
+    }
+  }
+
+  .nav-bar {
+    width: 100%;
+    padding: 0;
+    .nav-item {
+      list-style-type:none;
+      border-bottom: 1px solid #282828;
+      text-align: center;
+      line-height: 3rem;
+      color: #909096;
+      cursor: pointer;
+      &:hover {
+        color: #08FDD8;
+      }
+      &:first-child {
+        border-top: 1px solid #282828;
+      }
+      a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: inherit;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    a {
+      img.filter-color {
+        width: 1.7rem;
+        filter: invert(59%) sepia(6%) saturate(229%) hue-rotate(202deg) brightness(96%) contrast(86%);
+        &:hover {
+          filter: invert(89%) sepia(74%) saturate(6190%) hue-rotate(90deg) brightness(93%) contrast(114%);
+        }
+      }
+    }
+  }
+
+}
+
+
+.close-btn {
+  @media screen and (min-width: 1299px) {
+    display: none;
+  }
+  position: absolute;
+  z-index: 1000;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  img {
+    width: 35px;
+    filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(282deg) brightness(104%) contrast(110%);
+  }
+}
+
+.sounds {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 0;
+  color: white;
+  background-color: #181818;
+  padding: 0 5px;
+  border-radius: 5px;
+  width: fit-content;
+  user-select: none;
+  @media screen and (max-width: 1300px) {
+    left: 20px;
+  }
+  .on-btn {
+    cursor: pointer;
+  }
+}

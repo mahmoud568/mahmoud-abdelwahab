@@ -1,0 +1,49 @@
+<section class="header" [ngClass]="[isMenuBarOpened ? 'visible' : 'hidden']">
+  <div class="name-header">
+    <img class="img" src="assets\pic\m.png" alt="m" />
+    <p class="name">Mahmoud</p>
+    <p class="title">Web Developer</p>
+  </div>
+  <ul class="nav-bar">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="active">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="active">Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/" routerLinkActive="active">Contact</a>
+      </li>
+  </ul>
+  <div class="links">
+    <a href="#">
+      <img class="filter-color" src="https://img.icons8.com/windows/32/000000/linkedin-2.png"/>
+    </a>
+    <a href="#">
+      <img class="filter-color" src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/>
+    </a>
+  </div>
+</section>
+
+<div class="close-btn" (click)="isMenuBarOpened = !isMenuBarOpened">
+  <img *ngIf="isMenuBarOpened" src="https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png"/>
+  <img *ngIf="!isMenuBarOpened" src="https://img.icons8.com/ios-glyphs/30/000000/menu--v1.png"/>
+</div>
+
+<p class="sounds">
+  <!-- use css filter to change img color dynamicly  -->
+  <img
+  [ngStyle]="{'filter':isSoundsOn?
+   'invert(77%) sepia(98%) saturate(2541%) hue-rotate(101deg) brightness(98%) contrast(108%)' :
+   'invert(22%) sepia(75%) saturate(7273%) hue-rotate(335deg) brightness(101%) contrast(99%)'
+   }"
+  src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-Cloud-social-media-those-icons-fill-those-icons.png"/>
+  sounds
+  <span
+  class="on-btn"
+  (click)="isSoundsOn = !isSoundsOn"
+  [ngStyle]="{'color': isSoundsOn? '#08FDD8' : '#fd1056'}"
+  > {{ isSoundsOn? "on" : "off" }}</span>
+  <audio src="assets/audio/OST.mp3"  autoplay loop [muted]=!isSoundsOn ></audio>
+</p>
+
