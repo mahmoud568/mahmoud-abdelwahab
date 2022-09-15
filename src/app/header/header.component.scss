@@ -65,6 +65,10 @@
       line-height: 3rem;
       color: #909096;
       cursor: pointer;
+      &.active {
+        color: #08FDD8;
+
+      }
       &:hover {
         color: #08FDD8;
       }

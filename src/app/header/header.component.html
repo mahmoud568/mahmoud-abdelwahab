@@ -1,25 +1,25 @@
 <section class="header" [ngClass]="[isMenuBarOpened ? 'visible' : 'hidden']">
   <div class="name-header">
-    <img class="img" src="assets\pic\m.png" alt="m" />
-    <p class="name">Mahmoud</p>
+    <img class="img" src="assets\pic\m.png" alt="m"  routerLink="/"/>
+    <p class="name"  routerLink="/">Mahmoud</p>
     <p class="title">Web Developer</p>
   </div>
   <ul class="nav-bar">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/" routerLinkActive="active">About</a>
+      <li class="nav-item" routerLink="/about" routerLinkActive="active">
+        About
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/" routerLinkActive="active">Work</a>
+      <li class="nav-item" routerLink="/work" routerLinkActive="active">
+        Work
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/" routerLinkActive="active">Contact</a>
+      <li class="nav-item" routerLink="/contact" routerLinkActive="active">
+        Contact
       </li>
   </ul>
   <div class="links">
-    <a href="#">
+    <a href="https://www.linkedin.com/in/mahmoud-abdelwahab-8132241b2/">
       <img class="filter-color" src="https://img.icons8.com/windows/32/000000/linkedin-2.png"/>
     </a>
-    <a href="#">
+    <a href="https://github.com/mahmoud568">
       <img class="filter-color" src="https://img.icons8.com/ios-glyphs/30/000000/github.png"/>
     </a>
   </div>
@@ -44,6 +44,6 @@
   (click)="isSoundsOn = !isSoundsOn"
   [ngStyle]="{'color': isSoundsOn? '#08FDD8' : '#fd1056'}"
   > {{ isSoundsOn? "on" : "off" }}</span>
-  <audio src="assets/audio/OST.mp3"  autoplay loop [muted]=!isSoundsOn ></audio>
+  <audio src="assets/audio/OST.mp3" autoplay loop [muted]=!isSoundsOn ></audio>
 </p>
 
