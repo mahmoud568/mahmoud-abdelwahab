@@ -1,0 +1,309 @@
+.home {
+  background-color: #1d1d1d;
+  width: calc(100vw - 130px);
+  height: 100%;
+  color: white;
+  // overflow: hidden;
+  @media screen and (max-width: 1300px) {
+    width: 100vw;
+  }
+
+  .inf {
+    padding: 250px 0 0 80px;
+    .definition {
+      margin: 0;
+      font-size: 5rem;
+      line-height: 4.5rem;
+      transition: 0.3s;
+      span {
+        //  animation excist in style.css
+        overflow: hidden;
+        white-space: nowrap;
+        animation-name: typing;
+        animation-duration: 1s;
+        animation-timing-function: steps(200, end);
+        animation-iteration-count: 1;
+        &:nth-child(1) {
+          visibility: hidden;
+          animation-delay: 0.1s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(2) {
+          visibility: hidden;
+          animation-delay: 0.2s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(3) {
+          visibility: hidden;
+          animation-delay: 0.3s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(4) {
+          visibility: hidden;
+          animation-delay: 0.4s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(5) {
+          visibility: hidden;
+          animation-delay: 0.5s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(6) {
+          visibility: hidden;
+          animation-delay: 0.6s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(7) {
+          visibility: hidden;
+          animation-delay: 0.7s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(8) {
+          visibility: hidden;
+          animation-delay: 0.8s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(9) {
+          visibility: hidden;
+          animation-delay: 0.9s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(10) {
+          visibility: hidden;
+          animation-delay: 1s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(11) {
+          visibility: hidden;
+          animation-delay: 1.1s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(12) {
+          visibility: hidden;
+          animation-delay: 1.2s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(13) {
+          visibility: hidden;
+          animation-delay: 1.3s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(14) {
+          visibility: hidden;
+          animation-delay: 1.4s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(15) {
+          visibility: hidden;
+          animation-delay: 1.5s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(16) {
+          visibility: hidden;
+          animation-delay: 1.6s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(17) {
+          visibility: hidden;
+          animation-delay: 1.7s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(18) {
+          visibility: hidden;
+          animation-delay: 1.8s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(19) {
+          visibility: hidden;
+          animation-delay: 1.9s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(20) {
+          visibility: hidden;
+          animation-delay: 2s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(21) {
+          visibility: hidden;
+          animation-delay: 2.1s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(22) {
+          visibility: hidden;
+          animation-delay: 2.2s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(23) {
+          visibility: hidden;
+          animation-delay: 2.3s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(24) {
+          visibility: hidden;
+          animation-delay: 2.4s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(25) {
+          visibility: hidden;
+          animation-delay: 2.5s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(26) {
+          visibility: hidden;
+          animation-delay: 2.6s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(27) {
+          visibility: hidden;
+          animation-delay: 2.7s;
+          animation-fill-mode: forwards;
+        }
+        &:nth-child(28) {
+          visibility: hidden;
+          animation-delay: 2.8s;
+          animation-fill-mode: forwards;
+        }
+      }
+
+      @media screen and (max-width: 900px) {
+        font-size: 4rem;
+      }
+      @media screen and (max-width: 600px) {
+        font-size: 2rem;
+        line-height: 2.2rem;
+      }
+      .img {
+        width: 55px;
+        margin-right: 10px;
+        transition: 0.3s;
+        @media screen and (max-width: 900px) {
+          width: 50px;
+        }
+        @media screen and (max-width: 600px) {
+          width: 25px;
+          margin-right: 5px;
+        }
+      }
+      span:hover {
+        color: #08fdd8;
+      }
+      &:before {
+        content: "<h1>";
+        font-family: "La Belle Aurore", cursive;
+        color: #515152;
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: -3rem;
+        // left: -1.5rem;
+        left: 12rem;
+        @media screen and (max-width: 1300px) {
+          left: calc(12rem - 130px);
+        }
+      }
+      &:after {
+        content: "</h1>";
+        font-family: "La Belle Aurore", cursive;
+        color: #515152;
+        font-size: 1.2rem;
+        position: absolute;
+        // left: -1.5rem;
+        left: 12rem;
+        @media screen and (max-width: 1300px) {
+          left: calc(12rem - 130px);
+        }
+      }
+    }
+
+    .front-end-developer {
+      margin-top: 4.5rem;
+      font-size: 1.2rem;
+      letter-spacing: 4px;
+      display: block;
+      color: #8d8d8d;
+      animation: slideUpFront ease-in-out 0.5s forwards;
+      visibility: hidden;
+      animation-delay: 1s;
+      @keyframes slideUpFront {
+        0% {
+          visibility: visible;
+          margin-top: 5.5rem;
+          opacity: 0;
+        }
+        100% {
+          visibility: visible;
+          margin-top: 4.5rem;
+          opacity: 1;
+        }
+      }
+      @media screen and (max-width: 900px) {
+        letter-spacing: 0;
+      }
+      &:before {
+        content: "<p>";
+        font-family: "La Belle Aurore", cursive;
+        color: #515152;
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: -2rem;
+        left: 12rem;
+        letter-spacing: 0;
+        @media screen and (max-width: 1300px) {
+          left: calc(12rem - 130px);
+        }
+      }
+      &:after {
+        content: "</p>";
+        font-family: "La Belle Aurore", cursive;
+        color: #515152;
+        font-size: 1.2rem;
+        position: absolute;
+        margin-top: 1rem;
+        left: 12rem;
+        letter-spacing: 0;
+        @media screen and (max-width: 1300px) {
+          left: calc(12rem - 130px);
+        }
+      }
+    }
+
+    .contact-me {
+      margin-top: 2rem;
+      background-color: #1d1d1d;
+      color: white;
+      border: 1px solid #08fdd8;
+      height: 2.8rem;
+      width: 13rem;
+      font-size: 1rem;
+      letter-spacing: 4px;
+      cursor: pointer;
+      --c: #08fdd8; /* the color */
+
+      color: #0000;
+      background: linear-gradient(90deg, #fff 50%, var(--c) 0)
+          calc(100% - var(--_p, 0%)) / 200% 100%,
+        linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) 100% no-repeat;
+      -webkit-background-clip: text, padding-box;
+      background-clip: text, padding-box;
+      transition: 0.5s;
+      animation: slideUpContactMe ease-in-out .5s forwards;
+      visibility: hidden;
+      animation-delay: 1.5s;
+      @keyframes slideUpContactMe {
+        0% {
+          margin-top: 3rem;
+          opacity: 0;
+          visibility: visible;
+        }
+        100% {
+          margin-top: 2rem;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &:hover {
+        --_p: 100%;
+        color: #000;
+      }
+    }
+  }
+}

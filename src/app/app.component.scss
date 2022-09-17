@@ -4,4 +4,47 @@
 
 .app {
     display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.tags {
+    color: #515152;
+    position: absolute;
+    bottom: 0;
+    left: 10rem;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-family: 'La Belle Aurore',cursive;
+    @media screen and (max-width: 1300px) {
+        left: calc(10rem - 130px);;
+    }
+    &.top-tags {
+        bottom: auto;
+        top: 1rem;
+        @media screen and (max-width: 1300px) {
+            top: 3rem;
+        }
+        &:after {
+            content: '<body>';
+            font-family: 'La Belle Aurore',cursive;
+            color: #515152;
+            position: absolute;
+            margin-left: 2rem;
+        }
+    }
+
+    &.bottom-tags {
+        top: auto;
+        bottom: 3rem;
+        margin-left: 2rem;
+        &:after {
+            content: '</html>';
+            font-family: 'La Belle Aurore',cursive;
+            color: #515152;
+            position: absolute;
+            margin-left: -2rem;
+        }
+    }
 }

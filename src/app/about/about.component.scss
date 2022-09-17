@@ -1,0 +1,9 @@
+.about {
+    background-color: #1D1D1D;
+    width: calc(100vw - 130px);
+    height: 100%;
+    color: white;
+    @media screen and (max-width: 1300px) {
+        width: 100vw;
+    }
+}

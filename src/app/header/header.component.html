@@ -5,11 +5,23 @@
     <p class="title">Web Developer</p>
   </div>
   <ul class="nav-bar">
-    <li class="nav-item" routerLink="/about" routerLinkActive="active">
+    <li
+    class="nav-item"
+    routerLink="/about"
+    routerLinkActive="active"
+    (click)="isMenuBarOpened = false">
       About
     </li>
-    <li class="nav-item" routerLink="/work" routerLinkActive="active">Work</li>
-    <li class="nav-item" routerLink="/contact" routerLinkActive="active">
+    <li
+    class="nav-item"
+    routerLink="/work"
+    routerLinkActive="active"
+    (click)="isMenuBarOpened = false">Work</li>
+    <li
+    class="nav-item"
+    routerLink="/contact"
+    routerLinkActive="active"
+    (click)="isMenuBarOpened = false">
       Contact
     </li>
   </ul>

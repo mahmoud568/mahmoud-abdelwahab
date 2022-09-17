@@ -14,3 +14,25 @@ body {
  .La-Bell-font {
     font-family: 'La Belle Aurore',cursive;
  }
+
+ @keyframes typing {
+   from {
+     width: 0;
+   }
+   to {
+     width: 100%;
+     visibility: visible;
+   }
+ }
+
+ @keyframes pulse {
+   0% {
+     font-size: 90%;
+   }
+   50% {
+     font-size: 110%;
+   }
+   100% {
+     font-size: 100%;
+   }
+ }
