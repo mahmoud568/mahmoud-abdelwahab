@@ -11,14 +11,6 @@ export class HeaderComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-  //   let audio = new Audio();
-  // audio.src = "assets/audio/OST.mp3";
-  // audio.load();
-  // audio.play();
-  }
+  ngOnInit(): void {}
 
-  onClickSounds() {
-
-  }
 }
