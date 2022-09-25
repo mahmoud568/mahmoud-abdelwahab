@@ -5,7 +5,7 @@
 .app {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 53.25rem;
 }
 
 
@@ -36,9 +36,16 @@
     }
 
     &.bottom-tags {
-        top: auto;
-        bottom: 3rem;
+        top: 46.875rem;
+        // bottom: 10px;
         margin-left: 2rem;
+        position: absolute;
+        @media screen and (max-width: 900px) {
+            top: 45rem;
+          }
+          @media screen and (max-width: 600px) {
+            top: 40rem;
+          }
         &:after {
             content: '</html>';
             font-family: 'La Belle Aurore',cursive;

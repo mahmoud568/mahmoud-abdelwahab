@@ -23,6 +23,12 @@
         float: left;
         &.space {
           margin-right: 30px;
+          @media screen and (max-width: 900px) {
+            margin-right: 20px;
+          }
+          @media screen and (max-width: 600px) {
+            margin-right: 10px;
+          }
         }
         &:nth-child(1) {
           &.typing-animation {
